@@ -71,5 +71,5 @@ jobs:
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.KEY }}
       with:
-        source: "./app-vps/"
+        source: "./app_vps/"
         target: "/var/www/"
