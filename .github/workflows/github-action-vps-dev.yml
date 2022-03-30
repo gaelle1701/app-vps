@@ -50,7 +50,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with: 
         name: vps-${{ github.run_id }}-${{ github.run_number }}
-        path: ./dist/
+        path: ./dist/app-vps
 
   deploy: 
     needs: build
