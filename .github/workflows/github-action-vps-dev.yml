@@ -49,7 +49,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with: 
-        name: vps-${{ github.run_id }}-${{ github.run_number }}
+        name: app-vps-${{ github.run_id }}-${{ github.run_number }}
         path: ./dist/app-vps
 
   deploy: 
@@ -60,7 +60,7 @@ jobs:
     - name: Dowload artifact
       uses: actions/download-artifact@v2
       with: 
-        name: vps-${{ github.run_id }}-${{ github.run_number }} 
+        name: app-vps-${{ github.run_id }}-${{ github.run_number }} 
         path: './app-vps'
 
     - name: Copy repository contents via scp
